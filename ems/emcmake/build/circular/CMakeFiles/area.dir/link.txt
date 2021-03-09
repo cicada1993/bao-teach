@@ -1,0 +1,2 @@
+D:\emsdk\upstream\emscripten\emar.bat qc libarea.a  CMakeFiles/area.dir/area.cpp.o
+D:\emsdk\upstream\emscripten\emranlib.bat libarea.a

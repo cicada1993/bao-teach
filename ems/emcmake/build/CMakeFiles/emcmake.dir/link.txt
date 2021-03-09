@@ -1,0 +1,1 @@
+D:\emsdk\upstream\emscripten\em++.bat    -s WASM=1 --bind --js-library jslinker.js @CMakeFiles\emcmake.dir\objects1.rsp  -o emcmake.js @CMakeFiles\emcmake.dir\linklibs.rsp

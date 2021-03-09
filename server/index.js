@@ -1,0 +1,16 @@
+const chalk = require('chalk')
+const { port, getLocalIP } = require('./config')
+const router = require('./router')
+const Koa = require('koa')
+const serve = require('koa-static')
+const path = require('path')
+const app = new Koa()
+
+app.use(serve(path.join(__dirname, '../dist/')))
+app.use(router.routes())
+app.use(router.allowedMethods())
+app.listen(port)
+app.on('error', (err, ctx) => {
+    console.log(chalk.red('error') + chalk.gray(err.message))
+})
+console.log(chalk.blue('root folder is served at ') + chalk.yellow(`http://${getLocalIP()}:${port}`))

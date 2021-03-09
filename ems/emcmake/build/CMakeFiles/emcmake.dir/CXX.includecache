@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../circular/area.h
+
+D:/Workspace/happy-learning/vue-cli/em-projects/ems/emcmake/cus_export.h
+emscripten.h
+-
+
+D:/Workspace/happy-learning/vue-cli/em-projects/ems/emcmake/greet.h
+
+D:/Workspace/happy-learning/vue-cli/em-projects/ems/emcmake/main.cpp
+iostream
+-
+greet.h
+D:/Workspace/happy-learning/vue-cli/em-projects/ems/emcmake/greet.h
+area.h
+D:/Workspace/happy-learning/vue-cli/em-projects/ems/emcmake/area.h
+emscripten.h
+-
+emscripten/bind.h
+-
+cus_export.h
+D:/Workspace/happy-learning/vue-cli/em-projects/ems/emcmake/cus_export.h
+
