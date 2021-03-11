@@ -1,14 +1,13 @@
 const path = require('path')
 function startServer() {
-    let nodemon = require('nodemon');
+    const Koa = require('koa');
+    const app = new Koa();
 
-    nodemon({ script: path.join(__dirname, '../server/index.js') }).on('start', function () {
-        console.log('nodemon started');
-    }).on('crash', function () {
-        console.log('script crashed for some reason');
+    app.use(async ctx => {
+        ctx.body = 'Hello World';
     });
-    // force a restart
-    nodemon.emit('restart');
+
+    app.listen(3000);
 }
 
 module.exports = (req, res) => {
